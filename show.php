@@ -6,7 +6,7 @@
 
 	<head>
 		<meta charset="utf-8">
-		<link href="styles/style.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
 		<title>Крестики да нолики</title>
 	</head>
 
@@ -20,10 +20,10 @@
 					echo "<tr>";
 					for ($j=2; $j>=0; $j--){
 						echo "<td><a href='";
-						if ($mas[$i][$j]==1) echo "obr.php?st=".$i."&sl=".$j."&hello'><img src='images/krestik.png'>";
-						elseif ($mas[$i][$j]==2) echo "obr.php?st=".$i."&sl=".$j."&hello'><img src='images/nolik.png'>";
-						elseif ($mas[$i][$j]==3) echo "index.php'><img src='images/doge.png'>";
-						else echo "obr.php?st=".$i."&sl=".$j."&hello'><img src='images/start.png'>";
+						if ($mas[$i][$j]==1) echo "obr.php?st=".$i."&sl=".$j."&hello'><img src='krestik.png'>";
+						elseif ($mas[$i][$j]==2) echo "obr.php?st=".$i."&sl=".$j."&hello'><img src='nolik.png'>";
+						elseif ($mas[$i][$j]==3) echo "index.php'><img src='doge.png'>";
+						else echo "obr.php?st=".$i."&sl=".$j."&hello'><img src='start.png'>";
 						echo "</a></td>";
 					}
 					echo "</tr>";
@@ -39,10 +39,10 @@
 					echo "<tr>";
 					for ($j=0; $j<3; $j++){
 						echo "<td><a href='";
-						if ($mas[$i][$j]==1) echo "obr.php?st=".$i."&sl=".$j."&hello'><img src='images/krestik.png'>";
-						elseif ($mas[$i][$j]==2) echo "obr.php?st=".$i."&sl=".$j."&hello'><img src='images/nolik.png'>";
-						elseif ($mas[$i][$j]==3) echo "index.php'><img src='images/doge.png'>";
-						else echo "obr.php?st=".$i."&sl=".$j."&hello'><img src='images/start.png'>";
+						if ($mas[$i][$j]==1) echo "obr.php?st=".$i."&sl=".$j."&hello'><img src='krestik.png'>";
+						elseif ($mas[$i][$j]==2) echo "obr.php?st=".$i."&sl=".$j."&hello'><img src='nolik.png'>";
+						elseif ($mas[$i][$j]==3) echo "index.php'><img src='doge.png'>";
+						else echo "obr.php?st=".$i."&sl=".$j."&hello'><img src='start.png'>";
 						echo "</a></td>";
 					}
 					echo "</tr>";
